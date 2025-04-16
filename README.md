@@ -12,7 +12,7 @@ This is a case study project developed as part of the **Hexaware Java Training P
 - [Setup Instructions](#setup-instructions)
 - [Schema Design](#schema-design)
 - [Unit Testing](#unit-testing)
-- [Author](#author)
+- [Developed By](#developed-by)
 
 ---
 

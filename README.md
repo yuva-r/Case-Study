@@ -45,66 +45,75 @@ This is a case study project developed as part of the **Hexaware Java Training P
 
 ## Setup Instructions
 
-1. **Clone the repository**
+- **Clone the repository**  
+  git clone https://github.com/your-username/ecommerce-app.git  
+  cd ecommerce-app
 
-2. **Set up the MySQL database**
+- **Set up the MySQL database**  
+  Create the following tables:
 
-Execute the SQL script provided to create necessary tables:
-customers
-products
-cart
-orders
-order_items
+  - customers (customer_id, name, email, password)  
+  - products (product_id, name, price, description, stockQuantity)  
+  - cart (cart_id, customer_id, product_id, quantity)  
+  - orders (order_id, customer_id, order_date, total_price, shipping_address)  
+  - order_items (order_item_id, order_id, product_id, quantity)
 
-3. **Configure DB Connection**
+- **Configure DB connection**  
+  Edit the `db.properties` file inside the `resources/` folder:
 
-Edit the db.properties file inside the resources folder:
-hostname=localhost
-port=3306
-dbname=ecommerce
-username=root
-password=yourpassword
+  hostname=localhost  
+  port=3306  
+  dbname=ecommerce  
+  username=root  
+  password=yourpassword
 
-4. **Compile and Run**
-
-javac main/EcomApp.java
-java main.EcomApp
+- **Compile and Run**  
+  javac main/EcomApp.java  
+  java main.EcomApp
 
 ---
 
 ## Schema Design
 
-customers (customer_id, name, email, password)
-products (product_id, name, price, description, stockQuantity)
-cart (cart_id, customer_id, product_id, quantity)
-orders (order_id, customer_id, order_date, total_price, shipping_address)
-order_items (order_item_id, order_id, product_id, quantity)
+- **customers**  
+  customer_id, name, email, password
+
+- **products**  
+  product_id, name, price, description, stockQuantity
+
+- **cart**  
+  cart_id, customer_id, product_id, quantity
+
+- **orders**  
+  order_id, customer_id, order_date, total_price, shipping_address
+
+- **order_items**  
+  order_item_id, order_id, product_id, quantity
 
 ---
 
 ## Unit Testing
 
-Unit tests have been created using JUnit to ensure reliability. Some key test cases include:
+- **Test Cases Include:**  
+  - Product creation  
+  - Product addition to cart  
+  - Order placement
 
-1.Product creation
-2.Product addition to cart
-3.Order placement
-4.Exception handling for:
-     CustomerNotFoundException
-     ProductNotFoundException
-     OrderNotFoundException
+- **Exception Handling:**  
+  - CustomerNotFoundException  
+  - ProductNotFoundException  
+  - OrderNotFoundException
+
+- **How to Run Tests:**  
+  - Using Maven: mvn test  
+  - Using IDE: Right-click the test class and select "Run"
 
 ---
 
 ## Developed By
 
-Yuvasheee R
+Yuvashree R
 Trainee @ Hexaware Technologies
-
----
-
----
-
 
 
 

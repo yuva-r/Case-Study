@@ -112,8 +112,8 @@ This is a case study project developed as part of the **Hexaware Java Training P
 
 ## Developed By
 
-Yuvashree R
-Trainee @ Hexaware Technologies
+- **Yuvasheee R**  
+  Trainee @ Hexaware Technologies
 
-
+---
 
